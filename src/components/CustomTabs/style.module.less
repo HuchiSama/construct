@@ -1,0 +1,64 @@
+.custom-tab-div {
+  :global {
+    //tabs
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+    .ant-tabs-tab-active,
+    .ant-tabs-tab:hover {
+      color: #08c89a;
+      font-size: 14px;
+    }
+
+    .ant-tabs-tab-btn:focus,
+    .ant-tabs-tab-remove:focus,
+    .ant-tabs-tab-btn:active,
+    .ant-tabs-tab-remove:active {
+      color: #08c89a;
+    }
+
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+    .ant-tabs-right > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+    .ant-tabs-left > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab,
+    .ant-tabs-right > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+      @apply m-4 ml-0;
+    }
+
+    .ant-tabs {
+      @apply text-black text-opacity-50;
+    }
+
+    .ant-tabs-tab-active {
+      @apply rounded-md bg-white;
+      box-shadow: 0px 4px 12px 0px rgba(134, 134, 143, 0.1);
+
+      color: #08c89a;
+    }
+
+    .ant-tabs-tab {
+      @apply mr-4;
+    }
+
+    .ant-tabs-left > .ant-tabs-content-holder,
+    .ant-tabs-left > div > .ant-tabs-content-holder {
+      @apply ml-6;
+      border-left: none;
+    }
+    .ant-tabs-left
+      > .ant-tabs-content-holder
+      > .ant-tabs-content
+      > .ant-tabs-tabpane,
+    .ant-tabs-left
+      > div
+      > .ant-tabs-content-holder
+      > .ant-tabs-content
+      > .ant-tabs-tabpane {
+      @apply pl-0;
+    }
+
+    // .ant-tabs-content-holder {
+    //   @apply bg-white ml-6;
+    // }
+    .ant-tabs-ink-bar {
+      background: #07be9d;
+    }
+  }
+}

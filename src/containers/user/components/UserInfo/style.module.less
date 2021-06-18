@@ -1,0 +1,80 @@
+
+.user-info-div {
+  @apply w-4/12 p-6 flex flex-col justify-between;
+  .content-box();
+
+  :global{
+    .ant-row {  
+      @apply justify-center;
+    }
+  }
+  
+  & > div:first-of-type {
+    @apply mt-2;
+  }
+}
+
+
+.user-name-tag {
+  @apply my-2;
+  h3 {
+    color: rgba(20, 32, 51, 0.8);
+    @apply text-lg text-center mb-2 leading-5;
+    font-family: "AlibabaPuHuiTiR";
+  }
+  div {
+    @apply w-24 rounded-md border h-5 text-xs text-center mx-auto;
+    border-color:rgba(130, 202, 214, 0.3);
+    color: #25C7AA;
+    background-color: #E4F9FE;
+  }
+}
+
+.user-avatar {
+  @apply h-24 w-24 mb-1 mx-auto rounded-lg relative; 
+
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      @apply h-24 w-24 rounded-lg;
+      border: none;
+      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.08));
+    }
+  }
+}
+
+.user-email-div {
+  @apply text-sm text-black text-opacity-40;
+
+  .user-email {
+    @apply text-sm mb-2 mx-auto text-center;
+  }
+}
+.user-position {
+  @apply mx-auto text-center flex items-center justify-center text-black text-opacity-40;
+  svg {
+    @apply text-base mr-1 ;
+  }
+}
+
+.user-description {
+  @apply mt-6 py-3 border-t border-b w-full;
+  border-color: rgba(236, 234, 237, 0.8);
+
+  & > div {
+    @apply text-sm text-black text-opacity-50 h-5 text-center;
+  }
+}
+
+.user-edit {
+  @apply w-full mt-4 text-center;
+  button {
+    @apply rounded-lg w-2/5;
+    box-shadow: 0px 4px 8px rgba(7, 190, 157, 0.24)
+  }
+}
+
+.avatar-hover {
+  @apply bg-black h-full w-full opacity-30 rounded-lg text-white absolute;
+  .fn-flex-center();
+  cursor: pointer;
+}

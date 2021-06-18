@@ -1,0 +1,112 @@
+.h-screen {
+  // //tabs
+  // .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn, .ant-tabs-tab-active, .ant-tabs-tab:hover {
+  //   color: #08C89A;
+  //   font-size: 14px;
+  // }
+
+  // .ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active {
+  //   color: #08C89A;
+  // }
+
+  // .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-right > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-left > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab, .ant-tabs-right > div > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+  //   @apply m-4 ml-0;
+  // }
+
+  // .ant-tabs {
+  //   @apply text-black text-opacity-50;
+  // }
+
+  // .ant-tabs-tab-active {
+  //   @apply rounded-md bg-white ;
+  //   color: #08C89A;
+  // }
+
+  // .ant-tabs-tab {
+  //   @apply mr-4;
+  // }
+
+  // .ant-tabs-left > .ant-tabs-content-holder, .ant-tabs-left > div > .ant-tabs-content-holder {
+  //   @apply ml-6;
+  //   border-left: none;
+  // }
+  // .ant-tabs-left > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane, .ant-tabs-left > div > .ant-tabs-content-holder > .ant-tabs-content > .ant-tabs-tabpane {
+  //   @apply pl-0;
+  // }
+
+  // // .ant-tabs-content-holder {
+  // //   @apply bg-white ml-6;
+  // // }
+  // .ant-tabs-ink-bar {
+  //   background: #07BE9D;
+  // }
+
+  //button
+  .ant-btn,
+  .ant-btn-primary {
+    @apply rounded-lg border-none text-white text-sm;
+    background: #07be9d;
+    box-shadow: 0px 4px 8px rgba(7, 190, 157, 0.24);
+    letter-spacing: 1.4px;
+  }
+
+  .ant-btn:hover,
+  .ant-btn:focus {
+    background: #0aa78b;
+    box-shadow: 0px 4px 8px rgba(7, 190, 157, 0.24);
+  }
+
+  .ant-btn-primary:hover,
+  .ant-btn-primary:focus {
+    background: #0aa78b;
+    box-shadow: 0px 4px 8px rgba(7, 190, 157, 0.24);
+  }
+
+  .ant-input {
+    &::placeholder {
+      font-family: AlibabaPuHuiTiR;
+      font-size: 14px;
+      // line-height: 16px;
+      letter-spacing: 1.4px;
+
+      color: rgba(20, 32, 51, 0.6);
+    }
+
+    &:focus,
+    &:hover {
+      border-color: #08c89a;
+    }
+  }
+  .ant-input-affix-wrapper {
+    border: none;
+    padding: 6px 12px 6px 16px;
+  }
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused {
+    border-color: #08c89a;
+    box-shadow: none;
+  }
+}
+
+//级联选择
+.ant-cascader-menu-item,
+.ant-cascader-menu-item-expand,
+.ant-cascader-picker {
+  @apply text-black text-opacity-50;
+}
+
+//分页
+.ant-pagination,
+.ant-pagination-item,
+.ant-pagination-item a {
+  @apply text-black text-opacity-40;
+}
+
+.ant-pagination-disabled,
+.ant-pagination-disabled:hover,
+.ant-pagination-disabled:focus-visible,
+.ant-pagination-item:focus-visible a,
+.ant-pagination-item:hover a {
+  border-color: #07be9d;
+  color: #07be9d;
+}

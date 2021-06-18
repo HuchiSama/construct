@@ -1,0 +1,88 @@
+.background {
+  @apply absolute w-full h-full overflow-hidden;
+  z-index: -10;
+  filter: blur(150px);
+  background: linear-gradient(227.66deg, rgba(247, 245, 240, 0.08) 15.31%, #F0EFF7 88.49%);
+}
+
+.bg-item {
+  position: absolute;
+  border-radius: 50%;
+  transform: rotate(0);
+}
+
+.bg-item-0 {
+  .bg-item();
+  width: 50vw;
+  height: 40vw;
+  left: -3vw;
+  top: -22vw;
+  background: rgba(255, 248, 189, 0.56);
+  transform-origin: 50% 80%;
+  animation: scale 15s infinite linear;
+}
+
+.bg-item-1 {
+  .bg-item();
+  width: 50vw;
+  height: 40vw;
+  left: 44vw;
+  top: -30vw;
+  background: rgba(189, 223, 255, 0.56);
+  transform-origin: 30% 70%;
+  animation: scale 15s infinite linear;
+}
+
+.bg-item-2 {
+  .bg-item();
+  width: 40vw;
+  height: 26vw;
+  left: -12vw;
+  top: 35vw;
+  background: rgba(233, 214, 146, 0.67);
+  transform-origin: 80% 30%;
+  animation: scale 10s infinite linear;
+}
+
+.bg-item-3 {
+  .bg-item();
+  width: 20vw;
+  height: 15vw;
+  left: 90vw;
+  top: 12vw;
+  background: rgba(233, 167, 146, 0.35);
+  transform-origin: -20% 50%;
+  animation: scale 10s infinite linear;
+}
+
+.bg-item-4 {
+  .bg-item();
+  width: 20vw;
+  height: 15vw;
+  left: 62vw;
+  top: 23vw;
+  background: rgba(158, 146, 233, 0.38);
+  transform-origin: 0% 50%;
+  animation: scale 10s infinite linear;
+}
+
+.bg-item-5 {
+  .bg-item();
+  width: 40vw;
+  height: 26vw;
+  left: 50vw;
+  top: 40vw;
+  background: rgba(233, 224, 146, 0.6);
+  transform-origin: 50% 0%;
+  animation: scale 10s infinite linear;
+}
+
+@keyframes scale {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

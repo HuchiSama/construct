@@ -1,0 +1,26 @@
+// @import '~styles/fn.less';
+
+.publish-header {
+  @apply flex justify-between px-6 py-2 h-12 items-center;
+  .content-box();
+
+  & > div {
+    @apply flex items-center;
+
+    span {
+      color: rgba(20, 32, 51, 0.8);
+    }
+
+    & > label {
+      @apply w-4 h-4 inline-block text-center text-white rounded mr-2;
+      background-color: #08c89a;
+      font-size: 0.7rem;
+    }
+  }
+
+  & > button {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

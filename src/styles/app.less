@@ -1,0 +1,68 @@
+/**
+ * 引入 tailwind 样式
+ */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/**
+ * 自定义 tailwind 样式
+ */
+
+@layer base {
+  // h1 {
+  //   @apply text-2xl;
+  // }
+
+  html {
+    font-weight: 400;
+
+    a {
+      color: #07be9d;
+    }
+    a:hover {
+      color: #22d8b7;
+    }
+
+    input {
+      @apply rounded-lg;
+    }
+    textarea {
+      @apply rounded-lg;
+    }
+  }
+}
+
+@layer components {
+  .w-root {
+    width: 1200px;
+    @apply mt-6;
+  }
+
+  .content-wrapper {
+    @apply flex justify-between;
+  }
+
+  .domain-header {
+    @apply h-12 pl-6 py-4;
+  }
+
+  .list-content {
+    @apply bg-white rounded-xl mt-4 p-6;
+    box-shadow: 0px 4px 12px 0px rgba(134, 134, 143, 0.1);
+  }
+}
+
+@layer utilities {
+  // @variants hover, focus {
+  //   .filter-none {
+  //     filter: none;
+  //   }
+  // }
+  // @responsive {
+  //   .bg-opacity-none {
+  //     @apply opacity-0;
+  //   }
+  // }
+}

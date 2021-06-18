@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["vite/client"],
+    // "allowJs": false,
+    "allowJs": true,
+    "skipLibCheck": false,
+    // "esModuleInterop": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "jsx": "react",
+    "paths": {
+      "@*": ["src/*"]
+    },
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx", "src/utils/logout.js",
+  ],
+  "exclude": ["node_modules"]
+}
